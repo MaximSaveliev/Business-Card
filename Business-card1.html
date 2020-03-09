@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Business Card Example</title>
+  <style>
+    body{
+      background-color: #EEE;
+    }
+    h1,h2,p,ul{
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    #business-card{
+      background-color: #111;
+      width: 400px;
+      height: 200px;
+      font-family: Arial;
+    }
+    #business-card .name{
+        text-align: right;
+        float: left;
+        padding-right: 7px;
+        margin-top: 67px;
+        margin-left: 30px;
+        font-size: 84%;
+    }
+    #business-card .info{
+        width: 50%;
+        float: left;
+        color: #fff;    
+        border-left: 3px solid white;
+        padding-left: 7px;
+        margin-top: 55px;
+        font-size: 84%;
+    }
+    #business-card .name h1{
+        color: #fff;
+    }
+    #business-card .name h2{
+        color: rgb(211, 175, 85);
+    }
+    #business-card .name small{
+        color: gray;
+    }
+    #business-card .info li{
+        color: gray;
+        
+    }
+    #business-card .info ul>:nth-child(1):before{
+      content: "\1F57B";
+      font-size: 20px;
+      color: rgb(211, 175, 85);
+    }
+    #business-card .info ul>:nth-child(2):before{
+      content: "\2709";
+      font-size: 15px;
+      color: rgb(211, 175, 85);
+    }
+    #business-card .info ul>:nth-child(3):before{
+      content: "\1F30E";
+    }
+  </style>
+</head>
+<body>
+  <div id="business-card">
+
+    <div class="name">
+      <h1>Firstname</h1>
+      <h2>LASTNAME</h2>
+      <small>web designer &#47; developer</small>
+    </div>
+    <div class="info">
+      <p>12345 Some Street, City<br>State, Province, Country</p>
+       <ul>
+         <li>+00 22 333444</li>
+         <li>email@somemail.example</li>
+         <li>www.exampledomain.example</li>
+       </ul>
+    </div>
+
+  </div>
+</body>
+</html>
